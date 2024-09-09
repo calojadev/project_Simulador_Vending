@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Máquina Expendedora</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="vending-machine">
+        <h1>Máquina Expendedora</h1>
+        <div class="contenedor-productos">
+            <div class="products">
+                <div class="product" data-price="8000" id="1">
+                    <img src="img/aguabotella.jpg" rel="Botella_de_agua">
+                    <p>Agua</p>
+                    <p>Grs.8000</p>
+                    <button>Seleccionar</button>
+                </div>
+                <div class="product" data-price="10000" id="2">
+                    <img src="img/lataSoda.jpg" rel="Soda_en_lata">
+                    <p>Refresco</p>
+                    <p>Grs.10000</p>
+                    <button>Seleccionar</button>
+                </div>
+                <div class="product" data-price="15000" id="3">
+                    <img src="img/papasFritas.jpg" rel="Paquete_papas_fritas">
+                    <p>Snack</p>
+                    <p>Grs.15000</p>
+                    <button>Seleccionar</button>
+                </div>
+            </div>
+        </div>
+        <div class="balance">
+            <p>Saldo: Grs.<span id="balance">0</span></p>
+        </div>
+        <div class="controls">
+            <button id="add-money">Agregar Grs.10000</button>
+            <button id="close">Cancelar compra</button>
+        </div>
+        <div class="display" id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
